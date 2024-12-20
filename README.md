@@ -1,30 +1,4 @@
-<!-- # WeatherGFT🌍: Generalizing Weather Forecast to Fine-grained Temporal Scales via Physics-AI Hybrid Modeling -->
 
-<div align="center">
-  <h2><b> (NeurIPS'24) WeatherGFT🌍: Generalizing Weather Forecast to Fine-grained Temporal Scales via Physics-AI Hybrid Modeling
-  </b></h2>
-</div>
-
-## Updates/News 🆕
-
-🚩 **Updates** (2024-11-19) The model training code is open source.
-
-🚩 **Updates** (2024-10-10) The model code **`Models/WeatherGFT.py`** has been released, with more codes set to follow in due course. The model's checkpoint and example of input data have been uploaded to [Google Drive](https://drive.google.com/drive/folders/1fZlr0LS3aFJAym79ojn3njYiUhtdzKF6?usp=sharing).
-
-🚩 **News** (2024-09-26) WeatherGFT🌍 has been accepted by **NeurIPS 2024** 🎉. The code and the camera-ready version will be released soon.
-
-🚩 **Updates** (2024-05-22) Initial upload to arXiv [[PDF]](https://arxiv.org/pdf/2405.13796).
-
-## Visualization 🌟
-
-<!-- https://github.com/black-yt/WeatherGFT/assets/82664952/64094e86-0bf6-4bb7-a520-7b82dc06e2a8 -->
-<!-- https://github.com/user-attachments/assets/ba5a9582-82e6-4e74-a710-788e17139476 -->
-https://github.com/user-attachments/assets/560bc030-f0b4-48de-af56-7fdccf7d912e
-
-
-## Abstract 🗂️
-
-Data-driven artificial intelligence (AI) models have made significant advancements in weather forecasting, particularly in medium-range and nowcasting. However, most data-driven weather forecasting models are black-box systems that focus on learning data mapping rather than fine-grained physical evolution in the time dimension. Consequently, the limitations in the temporal scale of datasets prevent these models from forecasting at finer time scales. This paper proposes a **physics-AI** hybrid model (i.e., WeatherGFT) which Generalizes weather forecasts to Finer-grained Temporal scales beyond training dataset. Specifically, we employ a carefully designed PDE kernel to simulate physical evolution on a small time scale (e.g., 300 seconds) and use a parallel neural networks with a learnable router for bias correction. Furthermore, we introduce a lead time-aware training framework to promote the generalization of the model at different lead times. The weight analysis of physics-AI modules indicates that physics conducts major evolution while AI performs corrections adaptively. Extensive experiments show that WeatherGFT trained on an hourly dataset, achieves state-of-the-art performance across multiple lead times and exhibits the capability to generalize 30-minute forecasts.
 
 ## Physics-AI Hybrid Model 🧭
 
@@ -51,14 +25,3 @@ To quantify the accuracy of the model's generalized nowcasting, we utilize the s
 
 ![compare](assets/tp.png)
 
-
-## BibTeX
-
-```bibtex
-@article{xu2024generalizing,
-  title={Generalizing Weather Forecast to Fine-grained Temporal Scales via Physics-AI Hybrid Modeling},
-  author={Xu, Wanghan and Ling, Fenghua and Zhang, Wenlong and Han, Tao and Chen, Hao and Ouyang, Wanli and Bai, Lei},
-  journal={arXiv preprint arXiv:2405.13796},
-  year={2024}
-}
-```
